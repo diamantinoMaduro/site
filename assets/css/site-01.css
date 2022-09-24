@@ -1,0 +1,373 @@
+/*
+/// -------------------------------------------------------------------------------------------------------
+/// :: Diamantino Maduro - Developed by Hebert Richard | 20/11/2020 - 18:30.
+/// :: WARNING: This computer program is protected by copyright law and international treaties.
+/// :: Unauthorized duplication or distribution of this program, or any portion of it, may result
+/// :: in severe civil or criminal penalties, and will be prosecuted to the maximum extent possible
+/// :: under the law.
+/// ::
+/// :: v.1.0 - 20/11/2020 - Implementation.
+/// -------------------------------------------------------------------------------------------------------
+*/
+
+@import url(fonts.css);
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+/* SITE BUTTON */
+.btnSite {
+  padding-top:0.7rem;
+  padding-bottom:0.7rem;
+  padding-left:1.6rem;
+  padding-right:1.6rem;
+  background-color: #F0AD4E!important;
+  color: #000000!important;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 1.2rem;
+  border: 1px #F0AD4E solid;
+}
+
+.btnSite:hover {
+  background-color: transparent!important;
+  border-color: #F0AD4E;
+  color:#F0AD4E!important;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000000!important;
+}
+
+.nav-item {
+  font-size:0.9rem!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:#FFFFFF!important;
+}
+
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
+  color:#f0ad4e!important;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.hrStyle hr {
+  border-top: 2px solid #FFFFFF;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER */
+.imagem {
+  max-width: 100%;
+  height: 700px;
+  background:url('../images/bgHeader.jpg');
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+.texto {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  color:#fff;
+  text-align: center;
+  width: 99%;
+  line-height: 30px;
+  padding: 2rem;
+  top:30%;
+}
+
+.texto h1 {
+  margin:0;
+  padding:0;
+  font-size: 4rem;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+.texto h4 {
+  margin-top:2rem;
+  font-size: 1.8rem;
+  font-family: 'Roboto-Light', sans-serif;
+}
+
+.texto hr {
+  border-top: 2px solid #FFFFFF;
+  padding:0;
+  width: 800px;
+  margin: auto;
+}
+
+.texto a {
+  margin-top:3rem;
+  margin-bottom:2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  color: #FFFFFF!important;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 1.5rem;
+  border: 1px #FFFFFF solid;
+}
+
+.texto a:hover {
+  background-color:#F0AD4E;
+  border-color: #F0AD4E;
+  color:#000000!important;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+/* CONTACT 1 */
+.contact1 {
+  background-color: #E6E6E6;
+  padding:2rem;
+  color: #000000;
+}
+
+.contact1 span {
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+/* BOXES */
+.boxesMain {
+  padding:3rem;
+  background-color:#FFFFFF;
+  color:#000000;
+}
+
+.spcBox {
+  margin-bottom:2rem;
+}
+
+.boxes {
+  border:1px solid #000000;
+  padding:3rem;
+  text-align: center;
+}
+
+.boxes h4 {
+  font-family: 'Roboto-Black', sans-serif;
+  margin-bottom:2rem;
+  margin-top:1rem;
+}
+
+/* SOBRE MIM */
+.aboutme {
+  background:url('../images/bgAbout.jpg');
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  padding:8rem;
+  text-align: center;
+}
+
+.aboutme h1 {
+  font-family: 'Roboto-Black', sans-serif;
+  font-size: 3rem;
+}
+
+.aboutme h3 {
+  color: #F0AD4E;
+  margin-bottom: 5rem;
+}
+
+/* CONTACT FORM */
+.contactForm {
+  background-color: #E6E6E6;
+  color: #000000;
+  padding: 5%;
+  text-align: center;
+}
+
+.contactForm h1 {
+  font-family: 'Roboto-Black', sans-serif;
+  font-size: 3rem;
+  color: #F0AD4E;
+  margin-bottom:2rem;
+}
+
+.contactForm h5 {
+  margin-bottom:3rem;
+}
+
+.contactForm span {
+  font-family: 'Roboto-Black', sans-serif;
+}
+
+.contactForm a {
+  color: #F0AD4E;
+}
+
+.formItem {
+  margin: auto;
+  padding: 0.3rem;
+}
+
+.contactForm .btnSubmit {
+  margin-top:3rem;
+  margin-bottom:2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  color: #000000!important;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 1.5rem;
+  border: 1px #000000 solid;
+}
+
+.contactForm .btnSubmit:hover {
+  background-color:#F0AD4E;
+  border-color: #F0AD4E;
+  color:#000000!important;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1%;
+  text-align: center;
+}
+
+.footer p {
+  margin:0;
+  padding:0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+  color:#F0AD4E!important;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.footer i {
+  font-size: 1.3rem;
+  margin-left:0.2rem;
+  margin-right:0.2rem;
+  color: #F0AD4E;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .texto {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    text-align: center;
+    width: 93%;
+    line-height: 30px;
+    padding: 2rem;
+    top:20%;
+  }
+  
+  .texto h1 {
+    margin:0;
+    padding:0;
+    font-size: 2.5rem;
+    font-family: 'Roboto-Bold', sans-serif;
+  }
+  
+  .texto h4 {
+    margin-top:2rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto-Light', sans-serif;
+  }
+  
+  .texto hr {
+    border-top: 2px solid #FFFFFF;
+    padding:0;
+    width: 300px;
+    margin: auto;
+  }
+  
+  /* CONTACT 1 */
+  .contact1 {
+    text-align:center;
+  }
+  
+  /* BOXES */
+  .boxesMain {
+    padding:1rem;
+    background-color:#FFFFFF;
+    color:#000000;
+  }
+  
+  .boxes {
+    border:1px solid #000000;
+    padding:2rem;
+    text-align: center;
+    margin-bottom:2rem;
+    margin-top:1rem;
+  }
+  
+  /* SOBRE MIM */
+  .aboutme {
+    padding:2rem;
+    text-align: center;
+    padding-bottom:3rem;
+  }
+  
+  .aboutme h1 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .aboutme h3 {
+    color: #F0AD4E;
+    margin-bottom: 5rem;
+  }
+  
+  .aboutme h5 {
+    margin-bottom: 3rem;
+    font-size: 1.4rem!important;
+  }
+  
+  .footer {
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .icons {
+    margin-top:2rem;
+    margin-bottom:1rem;
+  }
+}
