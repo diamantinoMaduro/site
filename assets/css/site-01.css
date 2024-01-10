@@ -18,6 +18,7 @@ body {
   background-color: #000000;
   color: #FFFFFF;
   font-family: 'Roboto-Regular', sans-serif;
+  overflow-x: hidden;
 }
 
 /* SITE BUTTON */
@@ -53,7 +54,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color:#FFFFFF!important;
+  color:#DAA520!important;
 }
 
 .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
@@ -78,7 +79,7 @@ body {
 /* HEADER */
 .imagem {
   max-width: 100%;
-  height: 700px;
+  height: 500px;
   background:url('../images/bgHeader.jpg');
   background-repeat:no-repeat;
   -webkit-background-size:cover;
@@ -167,7 +168,13 @@ body {
 .boxes {
   border:1px solid #000000;
   padding:3rem;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.boxes:hover {
+  background-color: #DAA520;
+  transition: ease-in-out 0.3s;
+  border:1px solid #FFFFFF;
 }
 
 .boxes h4 {
@@ -185,8 +192,8 @@ body {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
-  padding:8rem;
-  text-align: center;
+  padding: 6rem;
+  /* text-align: center; */
 }
 
 .aboutme h1 {
@@ -333,7 +340,7 @@ body {
   .boxes {
     border:1px solid #000000;
     padding:2rem;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom:2rem;
     margin-top:1rem;
   }
